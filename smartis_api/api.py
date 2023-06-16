@@ -51,7 +51,7 @@ class SmartisAPI:
             return None
 
     @staticmethod
-    def handle_http_errors(response):
+    def handle_http_errors(response: requests.Response) -> None:
         """
         Handle HTTP errors.
 
@@ -69,7 +69,7 @@ class SmartisAPI:
             'instructions.',
             HTTPStatus.INTERNAL_SERVER_ERROR: 'Internal Server Error. The server encountered an error.',
         }
-        if response.status_code in status_code_to_message:
+        if HTTPStatus(response.status_code) in status_code_to_message:
             raise Exception(
-                f'Error {response.status_code}: {status_code_to_message[response.status_code]}'
+                f'Error {response.status_code}: {status_code_to_message[HTTPStatus(response.status_code)]}'
             )

@@ -4,7 +4,7 @@ A Python wrapper for the Smartis API.
 
 ## Description
 
-The `smartis_api` package provides a simple way to interact with the Smartis API. It's designed to make it easier to work with the API's endpoints, providing clear, Pythonic methods for all of the API's functions.
+The `smartis_api` package provides a simple way to interact with the Smartis API. It's designed to make it easier to work with the API's endpoints, providing clear, Pythonic methods for all the API's functions.
 
 ## Requirements
 
