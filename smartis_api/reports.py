@@ -1,5 +1,3 @@
-from typing import Any
-
 from smartis_api.api import SmartisAPI
 
 
@@ -8,7 +6,7 @@ class ReportsAPI(SmartisAPI):
     ReportsAPI is a subclass of SmartisAPI that provides methods specifically for handling reports in the Smartis API.
     """
 
-    def get_report(self, report_data: dict[str, Any]) -> dict[str, Any]:
+    def get_report(self, report_data: dict[str, any]) -> dict[str, any]:
         """
         Get a report from the API.
 

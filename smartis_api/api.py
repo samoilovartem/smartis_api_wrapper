@@ -1,5 +1,4 @@
 from http import HTTPStatus
-from typing import Any
 
 import requests
 
@@ -25,9 +24,9 @@ class SmartisAPI:
     def make_request(
         self,
         endpoint: str,
-        params: dict[str, Any] | None = None,
-        data: dict[str, Any] | None = None,
-    ) -> dict[str, Any] | None:
+        params: dict[str, any] | None = None,
+        data: dict[str, any] | None = None,
+    ) -> dict[str, any] | None:
         """
         Make a request to the API.
 
